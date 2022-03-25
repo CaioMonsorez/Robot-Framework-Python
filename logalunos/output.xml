@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.6 on win32)" generated="20220316 22:07:39.722" rpa="false" schemaversion="2">
+<suite id="s1" name="For" source="C:\AutomationTrainning\for.robot">
+<test id="s1-t1" name="Caso01: Lendo minha lista de Alunos">
+<for flavor="IN">
+<var>${item}</var>
+<value>@{Alunos}</value>
+<iter>
+<var name="${item}">Carlos</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo meus Alunos:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.850" endtime="20220316 22:07:39.853"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.850" endtime="20220316 22:07:39.853"/>
+</iter>
+<iter>
+<var name="${item}">Marcos</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo meus Alunos:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.854" endtime="20220316 22:07:39.859"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.854" endtime="20220316 22:07:39.859"/>
+</iter>
+<iter>
+<var name="${item}">Maria</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo meus Alunos:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.859" endtime="20220316 22:07:39.871"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.859" endtime="20220316 22:07:39.871"/>
+</iter>
+<iter>
+<var name="${item}">Marcela</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo meus Alunos:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.872" endtime="20220316 22:07:39.873"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.871" endtime="20220316 22:07:39.873"/>
+</iter>
+<iter>
+<var name="${item}">Joana</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo meus Alunos:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.873" endtime="20220316 22:07:39.875"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.873" endtime="20220316 22:07:39.875"/>
+</iter>
+<status status="PASS" starttime="20220316 22:07:39.842" endtime="20220316 22:07:39.875"/>
+</for>
+<tag>listaalunos</tag>
+<status status="PASS" starttime="20220316 22:07:39.840" endtime="20220316 22:07:39.886"/>
+</test>
+<test id="s1-t2" name="Caso02: lendo minha lista de Frutas">
+<for flavor="IN">
+<var>${item}</var>
+<value>@{frutas}</value>
+<iter>
+<var name="${item}">Banana</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo minhas frutas:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.891" endtime="20220316 22:07:39.892"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.890" endtime="20220316 22:07:39.892"/>
+</iter>
+<iter>
+<var name="${item}">Maça</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo minhas frutas:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.905" endtime="20220316 22:07:39.907"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.904" endtime="20220316 22:07:39.907"/>
+</iter>
+<iter>
+<var name="${item}">Manga</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo minhas frutas:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.908" endtime="20220316 22:07:39.920"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.907" endtime="20220316 22:07:39.920"/>
+</iter>
+<iter>
+<var name="${item}">Morango</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Exibindo minhas frutas:${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.921" endtime="20220316 22:07:39.923"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.921" endtime="20220316 22:07:39.923"/>
+</iter>
+<status status="PASS" starttime="20220316 22:07:39.890" endtime="20220316 22:07:39.923"/>
+</for>
+<tag>listafrutas</tag>
+<status status="PASS" starttime="20220316 22:07:39.889" endtime="20220316 22:07:39.924"/>
+</test>
+<test id="s1-t3" name="Caso03: Contando numeros de 0 a 9">
+<for flavor="IN RANGE">
+<var>${Count}</var>
+<value>0</value>
+<value>9</value>
+<iter>
+<var name="${Count}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.938" endtime="20220316 22:07:39.939"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.938" endtime="20220316 22:07:39.939"/>
+</iter>
+<iter>
+<var name="${Count}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.940" endtime="20220316 22:07:39.948"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.939" endtime="20220316 22:07:39.948"/>
+</iter>
+<iter>
+<var name="${Count}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.950" endtime="20220316 22:07:39.956"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.949" endtime="20220316 22:07:39.956"/>
+</iter>
+<iter>
+<var name="${Count}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.957" endtime="20220316 22:07:39.958"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.956" endtime="20220316 22:07:39.958"/>
+</iter>
+<iter>
+<var name="${Count}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:39.991" endtime="20220316 22:07:40.023"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:39.989" endtime="20220316 22:07:40.023"/>
+</iter>
+<iter>
+<var name="${Count}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.024" endtime="20220316 22:07:40.025"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.023" endtime="20220316 22:07:40.032"/>
+</iter>
+<iter>
+<var name="${Count}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.033" endtime="20220316 22:07:40.036"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.032" endtime="20220316 22:07:40.036"/>
+</iter>
+<iter>
+<var name="${Count}">7</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.040" endtime="20220316 22:07:40.050"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.039" endtime="20220316 22:07:40.050"/>
+</iter>
+<iter>
+<var name="${Count}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.051" endtime="20220316 22:07:40.053"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.051" endtime="20220316 22:07:40.053"/>
+</iter>
+<status status="PASS" starttime="20220316 22:07:39.937" endtime="20220316 22:07:40.053"/>
+</for>
+<tag>contador</tag>
+<status status="PASS" starttime="20220316 22:07:39.936" endtime="20220316 22:07:40.056"/>
+</test>
+<test id="s1-t4" name="Case04:Contando com Keywords de 0 a 9">
+<kw name="Conta 9">
+<for flavor="IN">
+<var>${Count}</var>
+<value>RANGE</value>
+<value>0</value>
+<value>9</value>
+<iter>
+<var name="${Count}">RANGE</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.087" endtime="20220316 22:07:40.091"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.075" endtime="20220316 22:07:40.091"/>
+</iter>
+<iter>
+<var name="${Count}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.091" endtime="20220316 22:07:40.119"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.091" endtime="20220316 22:07:40.120"/>
+</iter>
+<iter>
+<var name="${Count}">9</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.121" endtime="20220316 22:07:40.148"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.120" endtime="20220316 22:07:40.148"/>
+</iter>
+<status status="PASS" starttime="20220316 22:07:40.074" endtime="20220316 22:07:40.148"/>
+</for>
+<status status="PASS" starttime="20220316 22:07:40.073" endtime="20220316 22:07:40.149"/>
+</kw>
+<tag>Contar0a9</tag>
+<status status="PASS" starttime="20220316 22:07:40.070" endtime="20220316 22:07:40.156"/>
+</test>
+<test id="s1-t5" name="Case05:Contando com Keyword de 0 a 10">
+<kw name="conta 10">
+<for flavor="IN">
+<var>${Count}</var>
+<value>RANGE</value>
+<value>0</value>
+<value>10</value>
+<iter>
+<var name="${Count}">RANGE</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.187" endtime="20220316 22:07:40.249"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.186" endtime="20220316 22:07:40.249"/>
+</iter>
+<iter>
+<var name="${Count}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.250" endtime="20220316 22:07:40.289"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.249" endtime="20220316 22:07:40.289"/>
+</iter>
+<iter>
+<var name="${Count}">10</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estou no numero:${Count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.290" endtime="20220316 22:07:40.300"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.289" endtime="20220316 22:07:40.300"/>
+</iter>
+<status status="PASS" starttime="20220316 22:07:40.186" endtime="20220316 22:07:40.300"/>
+</for>
+<status status="PASS" starttime="20220316 22:07:40.185" endtime="20220316 22:07:40.303"/>
+</kw>
+<tag>Contas0a10</tag>
+<status status="PASS" starttime="20220316 22:07:40.172" endtime="20220316 22:07:40.316"/>
+</test>
+<test id="s1-t6" name="Case05:Contando com Keyword Paises">
+<kw name="Paises">
+<for flavor="IN">
+<var>${item}</var>
+<value>@{Paises}</value>
+<iter>
+<var name="${item}">Alemanha</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.338" endtime="20220316 22:07:40.349"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.338" endtime="20220316 22:07:40.349"/>
+</iter>
+<iter>
+<var name="${item}">Mexico</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.350" endtime="20220316 22:07:40.353"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.349" endtime="20220316 22:07:40.353"/>
+</iter>
+<iter>
+<var name="${item}">Dubai</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.354" endtime="20220316 22:07:40.368"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.353" endtime="20220316 22:07:40.368"/>
+</iter>
+<iter>
+<var name="${item}">Espanha</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.369" endtime="20220316 22:07:40.371"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.368" endtime="20220316 22:07:40.371"/>
+</iter>
+<iter>
+<var name="${item}">Brasil</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.373" endtime="20220316 22:07:40.386"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.371" endtime="20220316 22:07:40.387"/>
+</iter>
+<status status="PASS" starttime="20220316 22:07:40.337" endtime="20220316 22:07:40.387"/>
+</for>
+<status status="PASS" starttime="20220316 22:07:40.333" endtime="20220316 22:07:40.389"/>
+</kw>
+<tag>Paises</tag>
+<status status="PASS" starttime="20220316 22:07:40.321" endtime="20220316 22:07:40.390"/>
+</test>
+<test id="s1-t7" name="Case06: Entrada Festa">
+<kw name="Set Variable" library="BuiltIn">
+<var>${idade}</var>
+<arg>12</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220316 22:07:40.408" level="INFO">${idade} = 12</msg>
+<status status="PASS" starttime="20220316 22:07:40.407" endtime="20220316 22:07:40.408"/>
+</kw>
+<if>
+<branch type="IF" condition="${idade} &gt;= 18">
+<kw name="Log To Console" library="BuiltIn">
+<arg>você pode entrar!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220316 22:07:40.414" endtime="20220316 22:07:40.416"/>
+</kw>
+<status status="NOT RUN" starttime="20220316 22:07:40.409" endtime="20220316 22:07:40.416"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>você não pode entrar!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.416" endtime="20220316 22:07:40.423"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.416" endtime="20220316 22:07:40.423"/>
+</branch>
+<status status="PASS" starttime="20220316 22:07:40.408" endtime="20220316 22:07:40.423"/>
+</if>
+<tag>Festa</tag>
+<status status="PASS" starttime="20220316 22:07:40.406" endtime="20220316 22:07:40.424"/>
+</test>
+<test id="s1-t8" name="Case06: Reviews">
+<kw name="Set Variable" library="BuiltIn">
+<var>${canal}</var>
+<arg>'Ifood'</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220316 22:07:40.473" level="INFO">${canal} = 'Ifood'</msg>
+<status status="PASS" starttime="20220316 22:07:40.472" endtime="20220316 22:07:40.473"/>
+</kw>
+<if>
+<branch type="IF" condition="${canal} =='Ifood'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>coleta reviews</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.480" endtime="20220316 22:07:40.516"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.479" endtime="20220316 22:07:40.516"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>não coleta!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220316 22:07:40.516" endtime="20220316 22:07:40.517"/>
+</kw>
+<status status="NOT RUN" starttime="20220316 22:07:40.516" endtime="20220316 22:07:40.517"/>
+</branch>
+<status status="PASS" starttime="20220316 22:07:40.473" endtime="20220316 22:07:40.517"/>
+</if>
+<tag>reviews</tag>
+<status status="PASS" starttime="20220316 22:07:40.470" endtime="20220316 22:07:40.573"/>
+</test>
+<test id="s1-t9" name="Case 04: usando if">
+<kw name="Set Variable" library="BuiltIn">
+<var>${navegador}</var>
+<arg>"safari"</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220316 22:07:40.717" level="INFO">${navegador} = "safari"</msg>
+<status status="PASS" starttime="20220316 22:07:40.708" endtime="20220316 22:07:40.717"/>
+</kw>
+<if>
+<branch type="IF" condition="${navegador} == &quot;Chorme&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>Seu navegador é o Chorme</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220316 22:07:40.786" endtime="20220316 22:07:40.786"/>
+</kw>
+<status status="NOT RUN" starttime="20220316 22:07:40.786" endtime="20220316 22:07:40.787"/>
+</branch>
+<branch type="ELSE IF" condition="${navegador} == &quot;EI&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>Seu navegador é o EI</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220316 22:07:40.787" endtime="20220316 22:07:40.788"/>
+</kw>
+<status status="NOT RUN" starttime="20220316 22:07:40.787" endtime="20220316 22:07:40.788"/>
+</branch>
+<branch type="ELSE IF" condition="${navegador} == &quot;Opera&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>Seu navegador é o Operaa</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220316 22:07:40.788" endtime="20220316 22:07:40.788"/>
+</kw>
+<status status="NOT RUN" starttime="20220316 22:07:40.788" endtime="20220316 22:07:40.788"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Não sei qual é seu navegdor.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220316 22:07:40.789" endtime="20220316 22:07:40.818"/>
+</kw>
+<status status="PASS" starttime="20220316 22:07:40.788" endtime="20220316 22:07:40.819"/>
+</branch>
+<status status="PASS" starttime="20220316 22:07:40.786" endtime="20220316 22:07:40.819"/>
+</if>
+<status status="PASS" starttime="20220316 22:07:40.690" endtime="20220316 22:07:40.852"/>
+</test>
+<doc>lista com repetição "for"</doc>
+<status status="PASS" starttime="20220316 22:07:39.729" endtime="20220316 22:07:40.872"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">contador</stat>
+<stat pass="1" fail="0" skip="0">Contar0a9</stat>
+<stat pass="1" fail="0" skip="0">Contas0a10</stat>
+<stat pass="1" fail="0" skip="0">Festa</stat>
+<stat pass="1" fail="0" skip="0">listaalunos</stat>
+<stat pass="1" fail="0" skip="0">listafrutas</stat>
+<stat pass="1" fail="0" skip="0">Paises</stat>
+<stat pass="1" fail="0" skip="0">reviews</stat>
+</tag>
+<suite>
+<stat pass="9" fail="0" skip="0" id="s1" name="For">For</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

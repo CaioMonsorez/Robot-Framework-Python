@@ -1,0 +1,10 @@
+robot -d .log .\exemplo02.robot - Cria pasta-diretorio de testes, tipos de testes
+
+robot .\pasta executa o arquivo
+
+clear
+
+robot -d .\log2 -i Dicionario .\Listas.robot - Chama o caso desejado pela tag
+
+crie uma variavel do tipo listo de 5 frutas e imprima no console = Alunos
+
